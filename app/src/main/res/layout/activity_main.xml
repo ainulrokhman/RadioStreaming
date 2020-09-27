@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/radio_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOP FM BUMIAYU"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_topfm"
+            android:contentDescription="@string/logo_top_fm_bumiayu" />
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_below="@id/radio_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="95.1 FM"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@id/container"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@android:color/holo_red_light"
+        android:contentDescription="@string/button_play_pause"/>
+    <ImageView
+        android:layout_below="@id/container"
+        android:id="@+id/play"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_media_play"
+        android:contentDescription="@string/button_play_pause"/>
+
+</RelativeLayout>
